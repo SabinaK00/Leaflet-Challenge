@@ -1,0 +1,119 @@
+/* Base reset for modern, clean look */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern, clean font */
+}
+
+#map {
+  height: 100vh; /* Full screen height for the map */
+  width: 100%;   /* Full screen width for the map */
+  position: relative;
+}
+
+/* Info box styling */
+.info {
+  padding: 10px 12px;
+  font: 16px/18px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  background: rgba(249, 249, 249, 0.95); /* Soft light background */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for floating effect */
+  border-radius: 8px; /* Rounded corners */
+  border: 1px solid #ddd; /* Light border */
+}
+
+.info h4 {
+  margin: 0 0 8px;
+  color: #333; /* Darker text for contrast */
+  font-weight: bold;
+}
+
+/* Legend styling */
+.legend {
+  line-height: 22px;
+  color: #444; /* Slightly darker text */
+  background: rgba(255, 255, 255, 0.9); /* Slightly translucent background */
+  padding: 8px 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.legend i {
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin-right: 10px;
+  border-radius: 3px; /* Rounded corners for icons */
+  opacity: 0.85; /* Slightly transparent */
+}
+
+/* Leaflet map zoom control styling */
+.leaflet-control-zoom {
+  border: none; /* Remove default border */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  background-color: rgba(255, 255, 255, 0.9); /* Light background */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out {
+  color: #444; /* Darker zoom text */
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.leaflet-control-zoom-in:hover,
+.leaflet-control-zoom-out:hover {
+  background-color: #f0f0f0; /* Light background on hover */
+  color: #000; /* Black on hover */
+  cursor: pointer;
+}
+
+/* Customize the look of the map attribution */
+.leaflet-control-attribution {
+  background: rgba(255, 255, 255, 0.8);
+  color: #666;
+  font-size: 12px;
+  border-radius: 4px;
+  padding: 4px 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+/* Marker Cluster Styling */
+.marker-cluster-small {
+  background-color: #f28f3b; /* Light orange for small clusters */
+  border-radius: 50%;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+.marker-cluster-medium {
+  background-color: #f4978e; /* Peach color for medium clusters */
+  border-radius: 50%;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+
+.marker-cluster-large {
+  background-color: #f47b20; /* Darker orange for large clusters */
+  border-radius: 50%;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3); /* Slightly darker shadow */
+}
+
+/* Tooltip and pop-up styling */
+.leaflet-popup-content-wrapper {
+  background-color: rgba(255, 255, 255, 0.95); /* Light background for popups */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); /* Soft shadow for popups */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.leaflet-popup-tip {
+  background: rgba(255, 255, 255, 0.95); /* Matches popup background */
+}
+
+.leaflet-tooltip {
+  background-color: #333; /* Dark background for tooltips */
+  color: #fff; /* White text for contrast */
+  border-radius: 4px;
+  padding: 5px 10px;
+}
